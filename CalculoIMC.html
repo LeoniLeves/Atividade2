@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calculo IMC</title>
+		<link rel="stylesheet" href="style.css"/>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<fieldset class="tabela"> 
+				<legend>MultiCalculadora</legend>
+					<div class="radio1">
+						<input name="calc" type="radio" value="M" checked="checked" />IMC
+					</div>
+					<div class="radio2">
+						<input name="calc" type="radio" value="F" />Retângulo
+					</div>
+					<div class="radio3">
+					<input name="calc" type="radio" value="d" />Círculo
+					</div>
+					<div class="dados">
+						<div>
+							<label for="valo1">Altura:</label>
+							<input id="valor1" name="valor1" type="number" size="10" />
+						</div>
+						<div>
+							<label for="valor2">Peso:</label>
+							<input id="valor2" name="valor2" type="number" size="10" />
+						</div>
+						<div>
+							<label for="resultado">Resultado:</label>
+							<input id="resultado" name="resultado" type="number" size="10" readonly="readonly" />
+						</div>
+						<div>
+							<button type="button" onclick="calcularIMC();">Calculo IMC</button>
+						</div>
+					</div>	
+		</fieldset>
+	</body>
+</html>
